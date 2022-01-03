@@ -52,6 +52,10 @@ function App() {
     }
   }, [choiceOne, choiceTwo])
 
+  useEffect (() => {
+    shuffleCards();
+  }, [])
+
   const resetTurn = () => {
     setChoiceOne(null);
     setChoiceTwo(null);
