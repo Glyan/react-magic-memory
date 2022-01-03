@@ -69,6 +69,7 @@ function App() {
           <SingleCard key={card.id} card={card} handleChoice={handleChoice} flipped={card === choiceOne || card === choiceTwo || card.matched} disabled={disabled}/>  
         ))}
       </div>
+      <p>Turns: {turns} </p>
     </div>
   );
 }
